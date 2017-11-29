@@ -1,0 +1,52 @@
+.bouton17 {
+    width:185px;
+    height:185px;
+    background:#fafafa;
+    box-shadow:2px 2px 8px #aaa;
+    font:bold 13px Arial;
+    border-radius:80%;
+    color:#555;
+}
+* {
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box;
+}
+p, a{
+    text-align:center;
+}
+div {
+    text-align: center;
+}
+html, body {
+    height: 100%;
+    margin: 0; padding: 0;
+}
+body {
+    display : table;
+    width: 100%;
+}
+footer {
+    display : table-row;
+    height: 100px; /* à titre d'exemple */
+}
+body{
+    background: #b5c6c7;
+    font-family: 'Roboto';
+    font-weight:500;
+    color: #394956;
+    height:100%;
+}
+h1{
+    font-weight:100;
+    text-align: center;
+    margin:0;
+    padding:0;
+    font-size: 100px;
+}
+h4{
+    font-weight:400;
+    text-align: center;
+    margin:0;
+    padding:0;
+    margin-bottom: 50px;
+}

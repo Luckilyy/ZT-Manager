@@ -1,0 +1,75 @@
+.corps {
+    padding: 8px;
+    margin: 0 auto 8px;
+    line-height: 18px;
+    position: relative;
+    text-align: center;
+}
+html, body {
+    height: 100%;
+    margin: 0; padding: 0;
+}
+body {
+    display : table;
+    width: 100%;
+}
+footer {
+    display : table-row;
+    height: 100px; /* à titre d'exemple */
+}
+.otherquality {
+    background-color: #CDCDCD;
+    width: 175px;
+    text-align: center;
+    padding: 5px;
+    border: 2px solid #a3a3a3;
+    border-radius: 3px;
+    margin: 5px;
+    display: inline-block;
+}
+* {
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box;
+}
+p{
+    text-align:center;
+}
+.bouton17 {
+    width:185px;
+    height:185px;
+    background:#fafafa;
+    box-shadow:2px 2px 8px #aaa;
+    font:bold 13px Arial;
+    border-radius:80%;
+    color:#555;
+}
+a {
+    color: #303030;
+    text-decoration: none;
+    outline: none;
+}
+div {
+    text-align: center;
+    display: block;
+}
+body{
+    background: #b5c6c7;
+    font-family: 'Roboto';
+    font-weight:500;
+    color: #394956;
+    height:100%;
+}
+h1{
+    font-weight:100;
+    text-align: center;
+    margin:0;
+    padding:0;
+    font-size: 100px;
+}
+h4{
+    font-weight:400;
+    text-align: center;
+    margin:0;
+    padding:0;
+    margin-bottom: 50px;
+}

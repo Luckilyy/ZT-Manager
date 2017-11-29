@@ -1,0 +1,487 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700);
+
+footer {
+    position: absolute;
+    left: 0; 
+    right: 0;
+    bottom: 0;
+}
+.corps {
+    padding: 8px;
+    margin: 0 auto 8px;
+    line-height: 18px;
+    position: relative;
+}
+
+body{
+    background: #b5c6c7;
+    font-family: 'Roboto';
+    font-weight:500;
+
+    color: #394956;
+    height:100%;
+}
+h1{
+    font-weight:100;
+    text-align: center;
+    margin:0;
+    padding:0;
+    font-size: 100px;
+}
+h4{
+    font-weight:400;
+    text-align: center;
+    margin:0;
+    padding:0;
+    margin-bottom: 50px;
+}
+
+ul{
+    list-style-type: none;
+    width: 220px;
+    margin: auto;
+}
+
+p{
+    text-align:center;
+}
+
+li {
+    position: relative;
+    padding: 10px;
+    padding-left: 40px;
+    height:30px;
+}
+
+/* search box */
+
+.button_box2 {
+margin:100px auto;
+text-align: center;
+}
+
+.cf:before, .cf:after{
+content:"";
+display:table;
+}
+.cf:after{
+clear:both;
+}
+.cf{
+zoom:1;
+}
+
+.form-wrapper-2 {
+width: 330px;
+padding: 15px;
+background: #555;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+border-radius: 10px;
+-moz-box-shadow: 0 1px 1px rgba(0,0,0,.4) inset, 0 1px 0 rgba(255,255,255,.2);
+-webkit-box-shadow: 0 1px 1px rgba(0,0,0,.4) inset, 0 1px 0 rgba(255,255,255,.2);
+box-shadow: 0 1px 1px rgba(0,0,0,.4) inset, 0 1px 0 rgba(255,255,255,.2);
+}
+.form-wrapper-2 input {
+width: 210px;
+height: 40px;
+padding: 10px 5px;
+float: left;
+font: bold 15px 'Raleway', sans-serif;
+border: 0;
+background: #eee;
+-moz-border-radius: 3px 0 0 3px;
+-webkit-border-radius: 3px 0 0 3px;
+border-radius: 3px 0 0 3px;
+}
+.form-wrapper-2 input:focus {
+outline: 0;
+background: #fff;
+-moz-box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+-webkit-box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+}
+.form-wrapper-2 input::-webkit-input-placeholder {
+color: #999;
+font-weight: normal;
+font-style: italic;
+}
+.form-wrapper-2 input:-moz-placeholder {
+color: #999;
+font-weight: normal;
+font-style: italic;
+}
+.form-wrapper-2 input:-ms-input-placeholder {
+color: #999;
+font-weight: normal;
+font-style: italic;
+}
+div.centre {
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    width: 0px;
+    height: 0px;
+    margin-left: 0px; /* Cette valeur doit être la moitié négative de la valeur du width */
+    margin-top: 0px; /* Cette valeur doit être la moitié négative de la valeur du height */
+}
+.form-wrapper-2 button {
+overflow: visible;
+position: relative;
+float: right;
+border: 0;
+padding: 0;
+cursor: pointer;
+height: 40px;
+width: 120px;
+font: bold 15px/40px 'Raleway', sans-serif;
+color: #fff;
+text-transform: uppercase;
+background: #35578a;
+-moz-border-radius: 0 10px 10px 0;
+-webkit-border-radius: 0 10px 10px 0;
+border-radius: 0 10px 10px 0;
+text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
+}
+.form-wrapper-2 button:hover{
+background: #294369;
+}
+.form-wrapper-2 button:active,
+.form-wrapper-2 button:focus{
+background: #294369;
+}
+.form-wrapper-2 button:before {
+content: '';
+position: absolute;
+border-width: 8px 8px 8px 0;
+border-style: solid solid solid none;
+border-color: transparent #35578a transparent;
+top: 12px;
+left: -6px;
+}
+.form-wrapper-2 button:hover:before{
+border-right-color: #294369;
+}
+.form-wrapper-2 button:focus:before{
+border-right-color: #294369;
+}
+.form-wrapper-2 button::-moz-focus-inner {
+border: 0;
+padding: 0;
+}
+
+::selection{
+    background:none;
+}
+
+/* END search box */
+
+/* Radio Button */
+
+label:before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    position: absolute;
+    left: 7px;
+    top: calc(50% - 13px);
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+
+input[type="radio"] {
+    opacity: 0;
+    -webkit-appearance: none;
+    display: inline-block;
+    vertical-align: middle;
+    z-index: 100;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    top: calc(50% - 15px);
+    cursor: pointer;
+}
+
+.bullet {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    left: -3px;
+    top: 2px;
+    border: 5px solid #fff;
+    opacity: 0;
+    border-radius: 50%;
+}
+
+input[type="radio"]:checked ~ .bullet {
+    position:absolute;
+    opacity: 1;
+    animation-name: explode;
+    animation-duration: 0.350s;
+}
+
+.line {
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    background-color: #fff;
+    opacity:0;
+}
+
+.line.zero {
+    left: 11px;
+    top: -21px;
+    transform: translateY(20px);
+    width: 2px;
+    height: 10px;
+}
+
+.line.one {
+    right: -7px;
+    top: -11px;
+    transform: rotate(-55deg) translate(-9px);
+}
+
+.line.two {
+    right: -20px;
+    top: 11px;
+    transform: translate(-9px);
+}
+
+.line.three {
+    right: -8px;
+    top: 35px;
+    transform: rotate(55deg) translate(-9px);
+}
+
+.line.four {
+    left: -8px;
+    top: -11px;
+    transform: rotate(55deg) translate(9px);
+}
+
+.line.five {
+    left: -20px;
+    top: 11px;
+    transform: translate(9px);
+}
+
+.line.six {
+    left: -8px;
+    top: 35px;
+    transform: rotate(-55deg) translate(9px);
+}
+
+.line.seven {
+    left: 11px;
+    bottom: -21px;
+    transform: translateY(-20px);
+    width: 2px;
+    height: 10px;
+}
+
+input[type="radio"]:checked ~ .bullet .line.zero{
+    animation-name:drop-zero;
+    animation-delay: 0.100s;
+    animation-duration: 0.9s;
+    animation-fill-mode: forwards;
+}
+
+input[type="radio"]:checked ~ .bullet .line.one{
+    animation-name:drop-one;
+    animation-delay: 0.100s;
+    animation-duration: 0.9s;
+    animation-fill-mode: forwards;
+}
+
+input[type="radio"]:checked ~ .bullet .line.two{
+    animation-name:drop-two;
+    animation-delay: 0.100s;
+    animation-duration: 0.9s;
+    animation-fill-mode: forwards;
+}
+
+input[type="radio"]:checked ~ .bullet .line.three{
+    animation-name:drop-three;
+    animation-delay: 0.100s;
+    animation-duration: 0.9s;
+    animation-fill-mode: forwards;
+}
+
+input[type="radio"]:checked ~ .bullet .line.four{
+    animation-name:drop-four;
+    animation-delay: 0.100s;
+    animation-duration: 0.9s;
+    animation-fill-mode: forwards;
+}
+
+input[type="radio"]:checked ~ .bullet .line.five{
+    animation-name:drop-five;
+    animation-delay: 0.100s;
+    animation-duration: 0.9s;
+    animation-fill-mode: forwards;
+}
+
+input[type="radio"]:checked ~ .bullet .line.six{
+    animation-name:drop-six;
+    animation-delay: 0.100s;
+    animation-duration: 0.9s;
+    animation-fill-mode: forwards;
+}
+
+input[type="radio"]:checked ~ .bullet .line.seven{
+    animation-name:drop-seven;
+    animation-delay: 0.100s;
+    animation-duration: 0.9s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes explode {
+    0%{
+        opacity: 0;
+        transform: scale(10);
+    }
+    60%{
+        opacity: 1;
+        transform: scale(0.5);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes drop-zero {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+        height: 10px;
+    }
+    20% {
+        opacity:1;
+    }
+    100% {
+        transform: translateY(-2px);
+        height: 0px;
+        opacity:0;
+    }
+}
+
+@keyframes drop-one {
+    0% {
+        opacity: 0;
+        transform: rotate(-55deg) translate(-20px);
+        width: 10px;
+    }
+    20% {
+        opacity:1;
+    }
+    100% {
+        transform: rotate(-55deg) translate(9px);
+        width: 0px;
+        opacity:0;
+    }
+}
+
+@keyframes drop-two {
+    0% {
+        opacity: 0;
+        transform: translate(-20px);
+        width: 10px;
+    }
+    20% {
+        opacity:1;
+    }
+    100% {
+        transform: translate(9px);
+        width: 0px;
+        opacity:0;
+    }
+}
+
+@keyframes drop-three {
+    0% {
+        opacity: 0;
+        transform: rotate(55deg) translate(-20px);
+        width: 10px;
+    }
+    20% {
+        opacity:1;
+    }
+    100% {
+        transform: rotate(55deg) translate(9px);
+        width: 0px;
+        opacity:0;
+    }
+}
+
+@keyframes drop-four {
+    0% {
+        opacity: 0;
+        transform: rotate(55deg) translate(20px);
+        width: 10px;
+    }
+    20% {
+        opacity:1;
+    }
+    100% {
+        transform: rotate(55deg) translate(-9px);
+        width: 0px;
+        opacity:0;
+    }
+}
+
+@keyframes drop-five {
+    0% {
+        opacity: 0;
+        transform: translate(20px);
+        width: 10px;
+    }
+    20% {
+        opacity:1;
+    }
+    100% {
+        transform: translate(-9px);
+        width: 0px;
+        opacity:0;
+    }
+}
+
+@keyframes drop-six {
+    0% {
+        opacity: 0;
+        transform: rotate(-55deg) translate(20px);
+        width: 10px;
+    }
+    20% {
+        opacity:1;
+    }
+    100% {
+        transform: rotate(-55deg) translate(-9px);
+        width: 0px;
+        opacity:0;
+    }
+}
+
+@keyframes drop-seven {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+        height: 10px;
+    }
+    20% {
+        opacity:1;
+    }
+    100% {
+        transform: translateY(2px);
+        height: 0px;
+        opacity:0;
+    }
+}
+
+/* END Radio Button */
